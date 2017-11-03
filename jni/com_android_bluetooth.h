@@ -54,6 +54,10 @@ int register_com_android_bluetooth_gatt (JNIEnv* env);
 
 int register_com_android_bluetooth_sdp (JNIEnv* env);
 
+#ifdef BOARD_HAVE_FMRADIO_BCM
+int register_com_broadcom_fm_service(JNIEnv* env);
+#endif
+
 int register_com_android_bluetooth_btservice_vendor (JNIEnv* env);
 }
 

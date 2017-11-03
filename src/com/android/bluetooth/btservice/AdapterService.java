@@ -551,13 +551,13 @@ public class AdapterService extends Service {
     }
     public boolean onUnbind(Intent intent) {
         Log.w(TAG, "onUnbind, calling cleanup");
-        cleanup();
         return super.onUnbind(intent);
     }
 
     public void onDestroy() {
         debugLog("onDestroy()");
         mProfileObserver.stop();
+        cleanup();
     }
 
     void BleOnProcessStart() {
