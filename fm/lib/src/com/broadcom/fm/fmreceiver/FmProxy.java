@@ -263,7 +263,7 @@ public final class FmProxy {
     /** Specifies the default signal poll interval in ms. */
     public static final int SIGNAL_POLL_INTERVAL_DEFAULT = 100;
     /** Specifies the default signal poll interval in ms. */
-    public static final int DEEMPHASIS_TIME_DEFAULT = DEEMPHASIS_75U;
+    public static final int DEEMPHASIS_TIME_DEFAULT = DEEMPHASIS_50U;
     /** Default Alternate Frequency mode (DISABLED). */
     public static final int AF_MODE_DEFAULT = AF_MODE_OFF;
 
